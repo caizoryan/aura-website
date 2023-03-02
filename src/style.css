@@ -1,0 +1,91 @@
+/* importing fonts stuff */
+/* There is a better way to do this I forgot */
+@font-face {
+  font-family: "Monument";
+  font-weight: 100;
+  src: url("./Thin.otf") format("opentype");
+}
+@font-face {
+  font-family: "Monument";
+  font-weight: 300;
+  src: url("./Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Monument";
+  font-weight: 500;
+  src: url("./Regular.otf") format("opentype");
+}
+@font-face {
+  font-family: "Monument";
+  font-weight: 700;
+  src: url("./Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "Monument";
+  font-weight: 900;
+  src: url("./Black.otf") format("opentype");
+}
+
+body {
+  background-color: rgb(250, 229, 110);
+}
+
+* {
+  font-family: "Monument";
+  padding: 0;
+  margin: 0;
+}
+
+/* Menu stuff */
+.menu {
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+  height: 70px;
+  border: 2px solid black;
+  display: flex;
+  margin: auto;
+  width: 80vw;
+  max-width: 1400px;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu > .menu-button {
+  border-right: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 25%;
+}
+.menu:last-child {
+  border-right: 0px solid black;
+}
+
+.menu-button {
+  position: relative;
+  transition: all 100ms ease-in-out;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+  background-color: rgb(10, 10, 10);
+  color: white;
+  transform: scale(1.1) rotate(1deg);
+}
+
+/* Hover Gallery */
+.hover-gallery {
+  position: absolute;
+  left: 25%;
+  bottom: 400%;
+  width: 25%;
+}
+
+.hover-gallery img {
+  width: 80%;
+  position: absolute;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
