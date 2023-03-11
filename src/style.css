@@ -42,7 +42,7 @@ body {
   left: 50px;
   bottom: 50px;
   height: 70px;
-  border: 2px solid black;
+  border: 3px solid black;
   display: flex;
   margin: auto;
   width: 80vw;
@@ -52,7 +52,7 @@ body {
 }
 
 .menu > .menu-button {
-  border-right: 2px solid black;
+  border-right: 3px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
